@@ -41,7 +41,7 @@ And returning structured data like:
       dropout_keep: 0.5
       steps_check: 100
   ```
-  - 新增了jieba词性标注的模块，可以方便识别名字，地名，机构名等等jieba能够支持的词性，对应的yml文件配置如下：
+  - [ ] 新增了jieba词性标注的模块，可以方便识别名字，地名，机构名等等jieba能够支持的词性，对应的yml文件配置如下：
   ```
     language: "zh"
 
@@ -55,7 +55,7 @@ And returning structured data like:
       token_pattern: "(?u)\b\w+\b"
     - name: "EmbeddingIntentClassifier"
   ```
-  - 新增了根据实体反向修改意图，对应的文件配置如下：
+  - [ ] 新增了根据实体反向修改意图，对应的文件配置如下：
   ```
     language: "zh"
 
@@ -87,7 +87,7 @@ And returning structured data like:
     - name: "EmbeddingIntentClassifier"
     - name: "CRFEntityExtractor"
   ```
-  - 新增了对CPU和GPU的利用率的配置，主要是`EmbeddingIntentClassifier`和`ner_bilstm_crf`这两个使用到tensorflow的组件，配置如下（当然config_proto可以不配置，默认值会将资源全部利用）：
+  - [ ] 新增了对CPU和GPU的利用率的配置，主要是`EmbeddingIntentClassifier`和`ner_bilstm_crf`这两个使用到tensorflow的组件，配置如下（当然config_proto可以不配置，默认值会将资源全部利用）：
   ```
     language: "zh"
 
@@ -110,7 +110,7 @@ And returning structured data like:
         "allow_growth": True
       }
   ```
-  - 新增了`embedding_bert_intent_classifier`分类器，对应的配置文件如下：
+  - [ ] 新增了`embedding_bert_intent_classifier`分类器，对应的配置文件如下：
   ```
     language: "zh"
 
@@ -126,7 +126,7 @@ And returning structured data like:
     - name: "CRFEntityExtractor"
   ```
   
-   - 在基础词向量使用bert的情况下，后端的分类器使用tensorflow高级api完成，tf.estimator,tf.data,tf.example,tf.saved_model
+   - [ ] 在基础词向量使用bert的情况下，后端的分类器使用tensorflow高级api完成，tf.estimator,tf.data,tf.example,tf.saved_model
    `intent_estimator_classifier_tensorflow_embedding_bert`分类器，对应的配置文件如下：
   ```
   language: "zh"
