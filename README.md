@@ -17,7 +17,7 @@ And returning structured data like:
 
 ## New features
 目前新增的特性如下（请下载最新的rasa-nlu-gao版本）(edit at 2019.06.24)：
-  - [ V ] 新增了实体识别的模型，一个是bilstm+crf，一个是idcnn+crf膨胀卷积模型，对应的yml文件配置如下：
+  - [x] 新增了实体识别的模型，一个是bilstm+crf，一个是idcnn+crf膨胀卷积模型，对应的yml文件配置如下：
   ```
     language: "zh"
 
@@ -72,7 +72,7 @@ And returning structured data like:
       intent: ["enter_data"]
       min_confidence: 0
   ```
-  - 新增了bert模型提取词向量特征，对应的配置文件如下：
+  - [x] 新增了bert模型提取词向量特征，对应的配置文件如下：
   ```
     language: "zh"
 
