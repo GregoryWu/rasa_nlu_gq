@@ -17,14 +17,13 @@ And returning structured data like:
 
 ## New features
 目前新增的特性如下（请下载最新的rasa-nlu-gao版本）(edit at 2019.06.24)：
-  - [x] 新增了实体识别的模型，一个是bilstm+crf，一个是idcnn+crf膨胀卷积模型，对应的yml文件配置如下：
+  - [x] (arc3) 新增了实体识别的模型，一个是bilstm+crf，一个是idcnn+crf膨胀卷积模型，对应的yml文件配置如下：
   ```
     language: "zh"
-
     pipeline:
     - name: "JiebaTokenizer"
     - name: "CountVectorsFeaturizer"
-      token_pattern: "(?u)\b\w+\b"
+      token_pattern: '(?u)\b\w+\b'
     - name: "EmbeddingIntentClassifier"
     - name: "rasa_nlu_gao.extractors.bilstm_crf_entity_extractor.BilstmCRFEntityExtractor"
       lr: 0.001
@@ -35,7 +34,7 @@ And returning structured data like:
       num_segs: 4
       batch_size: 200
       tag_schema: "iobes"
-      model_type: "bilstm" # 模型支持两种idcnn膨胀卷积模型或bilstm双向lstm模型
+      model_type: "bilstm"
       clip: 5
       optimizer: "adam"
       dropout_keep: 0.5
@@ -72,7 +71,7 @@ And returning structured data like:
       intent: ["enter_data"]
       min_confidence: 0
   ```
-  - [x] 新增了bert模型提取词向量特征，对应的配置文件如下：
+  - [x] (arc2) 新增了bert模型提取词向量特征，对应的配置文件如下：
   ```
     language: "zh"
 
