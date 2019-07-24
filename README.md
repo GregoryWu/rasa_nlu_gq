@@ -71,7 +71,7 @@ And returning structured data like:
       intent: ["enter_data"]
       min_confidence: 0
   ```
-  - [x] (arc2) 新增了bert模型提取词向量特征，对应的配置文件如下：
+  -  新增了bert模型提取词向量特征，对应的配置文件如下：
   ```
     language: "zh"
 
@@ -109,7 +109,7 @@ And returning structured data like:
         "allow_growth": True
       }
   ```
-  - [ ] 新增了`embedding_bert_intent_classifier`分类器，对应的配置文件如下：
+  - [x] (arc2) 新增了`embedding_bert_intent_classifier`分类器，对应的配置文件如下：
   ```
     language: "zh"
 
