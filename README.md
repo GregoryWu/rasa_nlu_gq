@@ -71,7 +71,7 @@ And returning structured data like:
       intent: ["enter_data"]
       min_confidence: 0
   ```
-  -  新增了bert模型提取词向量特征，对应的配置文件如下：
+  - [ ] 新增了bert模型提取词向量特征，对应的配置文件如下：
   ```
     language: "zh"
 
