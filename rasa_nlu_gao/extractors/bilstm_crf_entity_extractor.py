@@ -98,8 +98,8 @@ class BilstmCRFEntityExtractor(EntityExtractor):
             self.filter_trainable_entities(training_data.training_examples)
 
         train_sentences = self._create_dataset(filtered_entity_examples)
-
-        # TODO: examine its validity~
+        
+# TODO: examine its validity~
         # 检测并维护数据集的tag标记
         self.update_tag_scheme(
             train_sentences, self.component_config["tag_schema"])
